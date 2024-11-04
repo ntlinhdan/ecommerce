@@ -1,0 +1,43 @@
+.form {
+    max-width: 400px; /* Đặt chiều rộng tối đa cho form */
+    margin: 120px auto; /* Giữa form trên trang */
+    padding: 20px; /* Thêm khoảng cách bên trong */
+    border: 1px solid #ccc; /* Đường viền cho form */
+    border-radius: 8px; /* Bo tròn góc của form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+    background-color: #f9f9f9; /* Màu nền nhẹ cho form */
+  }
+  
+  .form h2 {
+    text-align: center; /* Giữa tiêu đề của form */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  }
+  
+  .form input {
+    width: 100%; /* Đặt chiều rộng 100% cho ô input */
+    padding: 10px; /* Thêm khoảng cách bên trong cho ô input */
+    margin-bottom: 15px; /* Khoảng cách giữa các ô input */
+    border: 1px solid #ccc; /* Đường viền cho ô input */
+    border-radius: 5px; /* Bo tròn góc của ô input */
+  }
+  
+  .form button {
+    width: 100%; /* Đặt chiều rộng 100% cho nút bấm */
+    padding: 10px; /* Thêm khoảng cách bên trong cho nút bấm */
+    background-color: #007bff; /* Màu nền cho nút bấm */
+    color: white; /* Màu chữ của nút bấm */
+    border: none; /* Không có đường viền cho nút bấm */
+    border-radius: 5px; /* Bo tròn góc của nút bấm */
+    cursor: pointer; /* Đổi con trỏ khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+  }
+  
+  .form button:hover {
+    background-color: #0056b3; /* Màu nền khi hover vào nút bấm */
+  }
+  
+  .error {
+    color: red; /* Màu chữ đỏ cho thông báo lỗi */
+    margin-bottom: 15px; /* Khoảng cách phía dưới thông báo lỗi */
+    text-align: center; /* Giữa thông báo lỗi */
+  }

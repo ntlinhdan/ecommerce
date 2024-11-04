@@ -5,6 +5,9 @@ import Pages from "./Pages/pages/Pages";
 import { useState } from "react";
 import Cart from "./components/cart/Cart";
 import Footer from "./components/footer/Footer";
+import Login from "./Pages/Login/Login";
+import Register from "./Pages/register/Register";
+import Logout from "./Pages/logout/Logout";
 
 function App() {
   const [cartItem, setCartItem] = useState([]);
@@ -36,6 +39,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Pages cartItem={cartItem} addToCart={addToCart}/>} exact></Route>
         <Route path="/cart" element={<Cart cartItem={cartItem} addToCart={addToCart} decreaseQty={decreaseQty}/>} exact></Route>
+        <Route path="/login" element={<Login/>} exact></Route>
+        <Route path="/register" element={<Register/>} exact></Route>
+        <Route path="/logout" element={<Logout/>} exact></Route>
+
+
       </Routes>
       <Footer/>
     </>

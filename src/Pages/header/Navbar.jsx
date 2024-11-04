@@ -1,7 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { getCookie } from '../../helpers/cookie';
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const token = getCookie("token");
+  const isLogin = useSelector(state => state.loginReducer);
   return (
     <>
       <header className='header'>
@@ -24,6 +28,18 @@ const Navbar = () => {
                 <Link to='/contact'>Contact</Link>
               </li>
             </ul>
+          </div>
+          <div className="account">
+            {token ? (
+              <>
+                <NavLink to="/logout">Logout</NavLink>
+              </>
+            ) : (
+              <>
+                <NavLink to="/login">Login</NavLink>
+                <NavLink to="/register">Register</NavLink>
+              </>
+            )}
           </div>
         </div>
 

@@ -38,6 +38,7 @@
 .navLink {
   display: flex;
   justify-content: center;
+  margin-right: 450px;
 }
 
 .nav {
@@ -55,9 +56,30 @@
 }
 
 .nav li a:hover {
-  background-color: #555;
+  color: #555;
   border-radius: 4px;
 }
+.account {
+  display: flex; /* Sử dụng flexbox cho phần tài khoản */
+  align-items: center; /* Căn giữa các mục theo chiều dọc */
+  gap: 50px; /* Khoảng cách giữa các liên kết */
+  margin-right: 20px; /* Khoảng cách bên phải cho tài khoản */
+}
+
+.account a {
+  color: #ffffff; /* Màu chữ cho liên kết */
+  font-weight: 500; /* Độ đậm chữ */
+  border-radius: 4px; /* Bo tròn góc cho liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+  transition: color 0.3s, background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.account a:hover {
+  color: #555; /* Đổi màu nền khi hover vào liên kết */
+  /* padding: 8px 16px; */
+
+}
+
 /* End Navbar */
 
 /* Search */
