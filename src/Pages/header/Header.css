@@ -1,0 +1,157 @@
+/* Header */
+.head {
+  background-color: #fff;
+  padding: 10px 0;
+  color: #000;
+}
+
+.header i {
+  margin-right: 10px;
+}
+
+.head label {
+  margin-right: 30px;
+  font-size: 13px;
+}
+/* End Header */
+
+
+/* Navbar */
+.header {
+  background-color: #0f3460; 
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header i, .head i {
+  margin-right: 10px;
+}
+
+.head label {
+  margin-right: 30px;
+  font-size: 13px;
+}
+
+
+.navLink {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav li a {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+/* End Navbar */
+
+/* Search */
+.search{
+  /* padding: 5px 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow:  -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
+}
+.search .logo{
+  flex: 1;
+}
+.search .logo img{
+  width: auto;
+  height: auto;
+}
+
+.search .width{
+  width: 20%;
+}
+
+.search-box{
+  width: 80%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+  display: flex;
+  flex: 3;
+  border-radius: 70px;
+  padding: 10px 0;
+}
+
+.search-box i{
+  width: 5%;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.5;
+  padding: 15px 20px;
+  font-size: 17px;
+}
+
+.search-box input{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+::placeholder{
+  font-size: 15px;
+}
+.search-box span{  
+  padding: 10px 30px; /* Tăng padding để làm nút lớn hơn */
+  cursor: pointer;
+  opacity: 0.7; /* Thay đổi độ mờ nếu cần */
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s; /* Thêm hiệu ứng chuyển màu */
+  /* width: 20%;
+  opacity: 0.5;
+  border-left: 2px solid rgba(0, 0, 0, 0.1); */
+}
+.icon{
+  align-items: center;
+  /* margin-left: auto; */
+}
+.icon i{
+  /* margin-left: 15px; */
+  font-size: 20px;
+}
+.cart{
+  position: relative;
+  margin: 50px;
+}
+.search .cart span{
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #e94560;
+  font-size: 12px;
+  color: #fff;
+}
+.search .f-flex{
+  justify-content: end;
+}
+
+.icon-circle {
+  padding: 10px; /* Thêm padding cho các biểu tượng */
+  background-color: #f0f0f0; /* Màu nền cho biểu tượng */
+  border-radius: 50%; /* Bo tròn cho biểu tượng */
+  cursor: pointer; /* Thay đổi con trỏ khi hover */
+  transition: background-color 0.3s; /* Thêm hiệu ứng chuyển màu */
+}
+/* End Search */

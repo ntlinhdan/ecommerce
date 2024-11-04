@@ -1,0 +1,61 @@
+.home{
+    /* margin-top: 5px; */
+}
+.homeSlide{ 
+    background-color: #6d9cd4;
+}
+.homeSlide h1{
+    font-size: 45px;
+}
+.homeSlide p{
+    margin: 20px 0;
+}
+.homeSlide ul{
+    position: absolute;
+    bottom: 20px;
+}
+.homeSlide ul li{
+    border: 2px solid #b8b7b7;
+    border-radius: 50%;
+    padding: 10px;
+}
+.homeSlide ul li button{
+    background: transparent !important;
+    color: transparent !important;
+}
+.homeSlide ul li button::before{
+    font-size: 15px;
+    color: #0f3460;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    margin: auto;
+}
+.homeSlide .box{
+    display: flex !important;
+}
+.homeSlide .box .left{
+    width: 70%;
+    margin: 0 100px;
+}
+.homeSlide .box .right{
+    width: 30%;
+    display: flex;
+    align-items: center; /* Đảm bảo ảnh nằm chính giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+.homeSlide .box img{
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    animation: bounce 2s infinite; /* Thời gian 2s, lặp vô hạn */
+    transition: transform 0.3s; /* Thêm mượt mà khi hover */
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Vị trí ban đầu */
+    }
+    50% {
+        transform: translateY(-20px); /* Dịch chuyển lên trên 10px */
+    }
+}
